@@ -1,0 +1,1 @@
+INDEX VERSION 1.132+C:\Users\VishaliElayaraja\Desktop\vishali.elayaraja__corejava_project\vishali_corejava\src\.metadata\.plugins\org.eclipse.jdt.core
