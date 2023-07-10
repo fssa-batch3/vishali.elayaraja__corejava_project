@@ -4,7 +4,7 @@ public class Cat {
 	
 	  private int age;
 	  private String color;
-	  private String Speaks;
+	  private String speaks;
 
 
     public int getAge() {
@@ -32,13 +32,13 @@ public class Cat {
 
 
 	public String getSpeaks() {
-		return Speaks;
+		return speaks;
 	}
 
 
 
 	public void setSpeaks(String speaks) {
-		Speaks = speaks;
+		this.speaks = speaks;
 	}
 
 

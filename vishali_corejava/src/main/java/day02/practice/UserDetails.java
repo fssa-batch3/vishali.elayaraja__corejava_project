@@ -51,7 +51,6 @@ public class UserDetails {
 		System.out.println(user.getEmailId());
 		System.out.println(user.getPassword());
 	
-	}
-	
-}
+	 }
+   }
 }
