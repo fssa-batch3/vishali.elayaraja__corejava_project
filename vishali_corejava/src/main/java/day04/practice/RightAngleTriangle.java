@@ -19,6 +19,7 @@ public class RightAngleTriangle extends Polygon {
 		this.length = length;
 		this.breadth = breadth;
 		this.hypotenuse= hypotenuse;
+		this.side = side;
 	}
 
 	
