@@ -48,6 +48,9 @@ package day06.solved;
 	        
 		
 			System.out.println("Size of the array : " + cityList.size() );
+			String elementAtOne1 = "";
+			int elementAtOne2 = cityList.indexOf(elementAtOne1);
+			System.out.println("Index : " + elementAtOne2 );
 
-		}
+	  }
 	}
