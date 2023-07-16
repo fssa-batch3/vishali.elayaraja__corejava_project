@@ -1,7 +1,8 @@
 package day07.practice;
 
 import java.util.ArrayList;
-public class Main {
+
+class Main {
     public static void main(String[] args) {
         // Create an ArrayList to store task details
     	Task task = new Task();
