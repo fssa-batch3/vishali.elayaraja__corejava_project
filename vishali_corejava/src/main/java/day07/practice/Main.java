@@ -1,8 +1,7 @@
 package day07.practice;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
@@ -22,10 +21,7 @@ public class Main {
 
 //		a methd to printing tasks
 	public static void printTasks(ArrayList<Task> tasks) {
-		for (Task task : tasks) {
-			System.out.println("ID: " + task.getId() + ", Name: " + task.getName() + ", Deadline: " + task.getDeadline());
-		}
-		System.out.println();
+
 	}
 
 // 		a method to remove duplicates
@@ -33,6 +29,11 @@ public class Main {
 		HashSet<Task> taskSet = new HashSet<>(taskList);
 		taskList.clear();
 		taskList.addAll(taskSet);
+		for (Task task : taskSet) {
+			System.out
+					.println("ID: " + task.getId() + ", Name: " + task.getName() + ", Deadline: " + task.getDeadline());
+		}
+		System.out.println();
 	}
 
 }
@@ -62,8 +63,12 @@ class Task {
 		return deadline;
 	}
 
+	public int hashCode() {
+		return Objects.hash(this.deadline, this.name);
+	}
+
 	@Override
-	public boolean equals(Object obj) { 
+	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;
 		}
@@ -71,6 +76,6 @@ class Task {
 			return false;
 		}
 		Task other = (Task) obj;
-		return id == other.id && name.equals(other.name) && deadline.equals(other.deadline);
+		return name.equals(other.name) && deadline.equals(other.deadline);
 	}
 }
