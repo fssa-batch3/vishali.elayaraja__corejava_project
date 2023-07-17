@@ -28,7 +28,7 @@ public class ValidateTask {
         }
         //Validate ID
         public static boolean validateId(int id) throws IllegalArgumentException {
-            if(id < 0 || id < Integer.MAX_VALUE){
+            if(id < 0 || Integer.MAX_VALUE > id){
                 throw new IllegalArgumentException("Task id is not valid");
             }
             return true;

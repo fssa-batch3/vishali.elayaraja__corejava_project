@@ -43,7 +43,7 @@ class Task {
 	private String name;
 	private LocalDate deadline;
 
-	public Task(int id, String name, LocalDate deadline) { // constructor to save details
+	public Task(int id, String name, LocalDate deadline) {
 		this.id = id;
 		this.name = name;
 		this.deadline = deadline;
@@ -63,7 +63,7 @@ class Task {
 	}
 
 	@Override
-	public boolean equals(Object obj) { // adding validation if equals or not
+	public boolean equals(Object obj) { 
 		if (this == obj) {
 			return true;
 		}

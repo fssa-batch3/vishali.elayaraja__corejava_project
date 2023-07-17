@@ -1,9 +1,7 @@
 package day06.practice;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.HashSet;
 
 public class CityList {
 
@@ -14,7 +12,7 @@ public class CityList {
 		cityList.add("Mumbai");
 		cityList.add("Mumbai");
 // Add logic to remove the duplicate Array and 
-		Set<String> s = new LinkedHashSet<String>(cityList); 
+		HashSet<String> s = new HashSet<>(cityList);
 		System.out.println(s);
 // store the unique city name is an another ArrayList
 	}
