@@ -2,6 +2,7 @@ package day09.practice;
 
 import java.time.LocalDate;
 import java.util.*;
+
 public class Practice2 {
 	public static void main(String[] args) {
 		List<Task> arr = new ArrayList<Task>();
@@ -13,40 +14,52 @@ public class Practice2 {
 		System.out.println(arr);
 	}
 }
+
 class Task implements Comparable<Task> {
-	private int priority;
-	public int getPriority() {
-		return priority;
-	}
-	public void setPriority(int priority) {
-		this.priority = priority;
-	}
 	private int id;
 	private String name;
 	private LocalDate deadline;
+	private int priority;
+
+	public int getPriority() {
+		return priority;
+	}
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+
+	
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public LocalDate getDeadline() {
 		return deadline;
 	}
+
 	public void setDeadline(LocalDate deadline) {
 		this.deadline = deadline;
 	}
+
 	Task(int id, String name, LocalDate deadline) {
 		this.id = id;
 		this.name = name;
 		this.deadline = deadline;
 	}
+
 	@Override
 	public int compareTo(Task o) {
 		if (this.deadline.isEqual(o.getDeadline())) {
@@ -59,6 +72,7 @@ class Task implements Comparable<Task> {
 			}
 		}
 	}
+
 	@Override
 	public String toString() {
 		return "Task [id=" + id + ", name=" + name + ", deadline=" + deadline + "]";

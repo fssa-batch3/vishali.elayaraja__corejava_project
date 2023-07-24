@@ -13,5 +13,6 @@ public class Practice1 {
 		}
 		Collections.sort(arr);
 		System.out.println(arr);
+		sc.close();
 	}
 }

@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main {
+public class Practice3 {
 	
 	public static void main(String[] args) {
 		List<Task1> arr1 = new ArrayList<Task1>();

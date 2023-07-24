@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class TestTaskDAO {
 	@Test
 	void testCreateTask() throws DAOException {
-		Task task = new Task("pranaw","process");
+		Task task = new Task("vishali","process");
 		Assertions.assertTrue(TaskDAO.createTask(task));
 	}
 	@Test

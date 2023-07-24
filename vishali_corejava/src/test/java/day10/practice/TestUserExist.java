@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TestUserExist {
-	User u1 = new User(1, "pranaw", "pranaw@gmail.com");
-	User u2 = new User(2, "cyber", "cyber@gmail.com");
-	User u3 = new User(3, "sparky", "sparky@gmail.com");
+	User u1 = new User(1, "vishali", "vishali@gmail.com");
+	User u2 = new User(2, "vishu", "vishu@gmail.com");
+	User u3 = new User(3, "nithu", "nithu@gmail.com");
 
 	@Test
 	public void testValidId() {

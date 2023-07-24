@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class TestMain {
 	@Test
 	 void testIsValidEmail() throws InvalidEmailException {
-		Assertions.assertTrue(EmailValidator.isValidEmail("pranaw.murugesan@fssa.freshworks.com"));
+		Assertions.assertTrue(EmailValidator.isValidEmail("vishali.elayaraja@fssa.freshworks.com"));
 	}
 	@Test
 	 void testInValidEmail() throws InvalidEmailException {

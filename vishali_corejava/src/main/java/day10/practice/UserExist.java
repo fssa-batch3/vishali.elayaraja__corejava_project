@@ -98,8 +98,8 @@ public class UserExist {
 	}
 
 	public static void main(String[] args) throws UserAlreadyExistsException {
-		User user1 = new User(1, "pranaw", "pmurugesan@fssa.fresworks.com");
-		User user2 = new User(1, "pranaw", "pmurugesan@fssa.fresworks.com");
+		User user1 = new User(1, "vishali", "vishali@fssa.fresworks.com");
+		User user2 = new User(1, "vishali", "vishali@fssa.fresworks.com");
 		try {
 			register(user1);
 			register(user2);
